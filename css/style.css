@@ -1,0 +1,201 @@
+.logo-width{
+    width: 209px;
+    height: 36px;
+}
+.mycolor{
+    color:#FF3B21;
+}
+.bg-mycolor{
+    background-color: #FF3B21;
+}
+.text-dark{
+    color: #121212;
+}
+@font-face {
+    font-family: 'millik';
+    src: url('Millik.ttf');
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('DMSans-Regular.ttf');
+}
+.f-millik{
+    font-family: millik;
+}
+.f-dm{
+    font-family: DM Sans;
+}
+body{
+    font-family: DM Sans;
+    color: #121212;
+
+}
+.recbg{
+    background: url(../img/recbg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 190px;
+}
+.bg-bus{
+    background: url(../img/table.png);
+    background-repeat: no-repeat;
+    background-size: 66% ;
+    background-position: 70% 0px;
+}
+.bg-esc{
+    background: url(../img/elic.png);
+    background-repeat: no-repeat;
+    background-size:250px ;
+    background-position: 50% 180px;
+}
+.text-orange{
+    color: #F47D2B;
+}
+.bg-esc1{
+    background: url(../img/elic.png);
+    background-repeat: no-repeat;
+    background-size:250px ;
+    background-position: 50% 250px;
+}
+.bg-esc2{
+    background: url(../img/elic.png);
+    background-repeat: no-repeat;
+    background-size:250px ;
+    background-position: 50% 200px;
+}
+.text-grey{
+    color: #878585;
+}
+.round{
+    border-radius: 20px;
+}
+.bg-green{
+    background: #00CCBC;
+}
+.bg-grey{
+    background: #F7F7F7;
+}
+ul.me{
+    list-style-image: url('../img/check.png');
+    
+}
+.b-dash{
+    border: 0.5px dashed #AAAAAA;
+}
+.m-t-n5{
+    margin-top: -5px;
+}
+.bg-footer{
+    background: rgba(248, 164, 49, 0.08);
+}
+a.me:active, a.me:hover,a.me:focus{
+    color:#FF3B21 !important;
+}
+.m-t-n5 {
+    margin-top: -7px;
+}
+button.me:hover{
+    background: #FF3B21;
+    box-shadow:  5px 5px 14px #cf301b,
+    -5px -5px 14px #ff4627;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+button.mee:hover{
+    background: #fafafa;
+    box-shadow:  5px 5px 14px #cbcbcb,
+    -5px -5px 14px #ffffff;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+button:focus{
+    box-shadow: none;
+}
+.border.b-hov:hover{
+    border: 1px solid #FF3B21 !important;
+}
+.bg-grey.hov:hover{
+    background: rgba(255, 59, 33, 0.08) !important;
+}
+.text-grey.hov:hover{
+    color: #FF3B21;
+}
+.hamburger {
+    padding: 10px 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; }
+    .hamburger:hover {
+    opacity: 0.7; }
+    .hamburger.is-active:hover {
+    opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+    background-color: #000; }
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+#map{
+    height: 550px;
+    border-radius: 40px;
+    
+    /* filter: grayscale(100%);
+        */
+    
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; }
+    .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+    .hamburger-inner::before {
+    top: -10px; }
+    .hamburger-inner::after {
+    bottom: -10px; }
+
+
+    .hamburger--3dxy .hamburger-box {
+        perspective: 80px;
+    }
+    
+    .hamburger--3dxy .hamburger-inner {
+        transition: transform 0.9s ease-in-out, background-color 0.5s 0.9s ease-in-out;
+        }
+        .hamburger--3dxy .hamburger-inner::before, .hamburger--3dxy .hamburger-inner::after {
+        transition: transform 0.5s 0.9s ease-in-out;
+        }
+    
+    .hamburger--3dxy.is-active .hamburger-inner {
+        background-color: transparent !important;
+        transform: rotateX(180deg) rotateY(180deg);
+        }
+        
+        .hamburger--3dxy.is-active .hamburger-inner::before {
+        transform: translate3d(0, 10px, 0) rotate(45deg); }
+        .hamburger--3dxy.is-active .hamburger-inner::after {
+        transform: translate3d(0, -10px, 0) rotate(-45deg); }
